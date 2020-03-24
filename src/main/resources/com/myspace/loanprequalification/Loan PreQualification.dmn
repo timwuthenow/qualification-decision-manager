@@ -13,9 +13,12 @@
       <dmn:text>[300..850]</dmn:text>
     </dmn:allowedValues>
   </dmn:itemDefinition>
+  <dmn:itemDefinition id="_79D5AEDC-414B-42B3-97C0-27510A5B18A9" name="tPercent" isCollection="false">
+    <dmn:typeRef>number</dmn:typeRef>
+  </dmn:itemDefinition>
   <dmn:inputData id="_127BA421-B24C-446A-949B-EED9A1B2834C" name="Loan rate pct">
     <dmn:extensionElements/>
-    <dmn:variable id="_BCFFCFFD-6E52-4E96-9756-4B82F92791A7" name="Loan rate pct"/>
+    <dmn:variable id="_BCFFCFFD-6E52-4E96-9756-4B82F92791A7" name="Loan rate pct" typeRef="tPercent"/>
   </dmn:inputData>
   <dmn:inputData id="_9CF7FEA4-6BDF-4D96-91A6-3317E2683BA6" name="Purchase price">
     <dmn:extensionElements/>
