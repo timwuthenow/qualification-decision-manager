@@ -22,6 +22,12 @@
       <dmn:text>&gt;0</dmn:text>
     </dmn:allowedValues>
   </dmn:itemDefinition>
+  <dmn:itemDefinition id="_1DFFAAC0-AE56-46FF-B018-5F83A140DFD5" name="tAffordabilityCategory" isCollection="false">
+    <dmn:typeRef>string</dmn:typeRef>
+    <dmn:allowedValues kie:constraintType="enumeration" id="_34EF380F-A986-4FA2-9735-5451D6036583">
+      <dmn:text>"Affordable", "Marginal", "Unaffordable"</dmn:text>
+    </dmn:allowedValues>
+  </dmn:itemDefinition>
   <dmn:inputData id="_127BA421-B24C-446A-949B-EED9A1B2834C" name="Loan rate pct">
     <dmn:extensionElements/>
     <dmn:variable id="_BCFFCFFD-6E52-4E96-9756-4B82F92791A7" name="Loan rate pct" typeRef="tPercent"/>
@@ -43,6 +49,11 @@
     <dmn:question>What is the likely eligibility of the borrower for a mortgage loan?</dmn:question>
     <dmn:allowedAnswers>"Likely approved", "Possibly approved", "Likely disapproved"</dmn:allowedAnswers>
     <dmn:variable id="_46EC793C-103C-4F2D-8E44-167B7F6FFB04" name="Loan PreQualification" typeRef="tLoanPrequalification"/>
+    <dmn:literalExpression/>
+  </dmn:decision>
+  <dmn:decision id="_78978B61-5DC5-4363-8B96-264C4633B106" name="Affordability category">
+    <dmn:extensionElements/>
+    <dmn:variable id="_299853B7-ED7E-4E21-B870-F0FB91AB03BC" name="Affordability category" typeRef="tAffordabilityCategory"/>
     <dmn:literalExpression/>
   </dmn:decision>
   <dmn:inputData id="_C078963A-013E-421C-9B98-A85C111E019B" name="Monthly income">
@@ -79,6 +90,15 @@
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
         <dc:Bounds x="484" y="202" width="123" height="73"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_78978B61-5DC5-4363-8B96-264C4633B106" dmnElementRef="_78978B61-5DC5-4363-8B96-264C4633B106" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="587" y="41" width="175" height="112"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_9CF7FEA4-6BDF-4D96-91A6-3317E2683BA6" dmnElementRef="_9CF7FEA4-6BDF-4D96-91A6-3317E2683BA6" isCollapsed="false">
