@@ -16,13 +16,19 @@
   <dmn:itemDefinition id="_79D5AEDC-414B-42B3-97C0-27510A5B18A9" name="tPercent" isCollection="false">
     <dmn:typeRef>number</dmn:typeRef>
   </dmn:itemDefinition>
+  <dmn:itemDefinition id="_71C04766-0633-40E5-BA6D-16C28B77877D" name="tPositiveNumber" isCollection="false">
+    <dmn:typeRef>number</dmn:typeRef>
+    <dmn:allowedValues kie:constraintType="expression" id="_AB51D19B-4902-40B3-8791-96E73B03B9B7">
+      <dmn:text>&gt;0</dmn:text>
+    </dmn:allowedValues>
+  </dmn:itemDefinition>
   <dmn:inputData id="_127BA421-B24C-446A-949B-EED9A1B2834C" name="Loan rate pct">
     <dmn:extensionElements/>
     <dmn:variable id="_BCFFCFFD-6E52-4E96-9756-4B82F92791A7" name="Loan rate pct" typeRef="tPercent"/>
   </dmn:inputData>
   <dmn:inputData id="_9CF7FEA4-6BDF-4D96-91A6-3317E2683BA6" name="Purchase price">
     <dmn:extensionElements/>
-    <dmn:variable id="_8306AB20-DA65-403C-9DAF-9A268897CE23" name="Purchase price"/>
+    <dmn:variable id="_8306AB20-DA65-403C-9DAF-9A268897CE23" name="Purchase price" typeRef="tPositiveNumber"/>
   </dmn:inputData>
   <dmn:inputData id="_6B3D408A-118B-406A-85DC-CDD5DC6D39D6" name="Credit Score">
     <dmn:extensionElements/>
@@ -30,7 +36,7 @@
   </dmn:inputData>
   <dmn:inputData id="_066812F2-452C-4CE1-A27E-09CB85D613FB" name="Down payment">
     <dmn:extensionElements/>
-    <dmn:variable id="_12B913E6-8420-42B8-92A7-760F8A7A5F37" name="Down payment"/>
+    <dmn:variable id="_12B913E6-8420-42B8-92A7-760F8A7A5F37" name="Down payment" typeRef="tPositiveNumber"/>
   </dmn:inputData>
   <dmn:decision id="_2BBB81EB-DFA8-4E73-BC84-A25334E8FFED" name="Loan PreQualification">
     <dmn:extensionElements/>
@@ -41,7 +47,7 @@
   </dmn:decision>
   <dmn:inputData id="_C078963A-013E-421C-9B98-A85C111E019B" name="Monthly income">
     <dmn:extensionElements/>
-    <dmn:variable id="_2B2CB7E4-B0FA-475C-AFC9-492179FED498" name="Monthly income"/>
+    <dmn:variable id="_2B2CB7E4-B0FA-475C-AFC9-492179FED498" name="Monthly income" typeRef="tPositiveNumber"/>
   </dmn:inputData>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
@@ -99,7 +105,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="222" y="331" width="149" height="72"/>
+        <dc:Bounds x="222" y="332" width="149" height="72"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
     </dmndi:DMNDiagram>
