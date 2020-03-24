@@ -1,11 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_4D5ED131-974B-42A5-8997-9D416DD102E7" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_371ECEAC-2DF6-446E-9959-CA31C2D32065" name="Loan PreQualification" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_4D5ED131-974B-42A5-8997-9D416DD102E7">
   <dmn:extensionElements/>
+  <dmn:itemDefinition id="_922D3BA3-2C5A-4946-BE8E-1860883A6900" name="tLoanPrequalification" isCollection="false">
+    <dmn:typeRef>string</dmn:typeRef>
+    <dmn:allowedValues kie:constraintType="enumeration" id="_1DEE8B5A-FFCF-4C37-9F5B-B4616CE4F9CD">
+      <dmn:text>"Likely approved", "Likely disapproved", "Possibly approved"</dmn:text>
+    </dmn:allowedValues>
+  </dmn:itemDefinition>
   <dmn:decision id="_2BBB81EB-DFA8-4E73-BC84-A25334E8FFED" name="Loan PreQualification">
     <dmn:extensionElements/>
     <dmn:question>What is the likely eligibility of the borrower for a mortgage loan?</dmn:question>
     <dmn:allowedAnswers>"Likely approved", "Possibly approved", "Likely disapproved"</dmn:allowedAnswers>
-    <dmn:variable id="_46EC793C-103C-4F2D-8E44-167B7F6FFB04" name="Loan PreQualification"/>
+    <dmn:variable id="_46EC793C-103C-4F2D-8E44-167B7F6FFB04" name="Loan PreQualification" typeRef="tLoanPrequalification"/>
     <dmn:literalExpression/>
   </dmn:decision>
   <dmndi:DMNDI>
@@ -19,7 +25,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="335" y="29" width="183" height="111"/>
+        <dc:Bounds x="250" y="41" width="183" height="111"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
     </dmndi:DMNDiagram>
