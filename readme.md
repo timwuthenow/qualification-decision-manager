@@ -15,3 +15,7 @@ A text annotation adds an additional bit of documentation to any of the parts of
 
 The DMN shows a mortgage loan pre-qualification decision that might appear on the lender's website to give prospective borrowers an idea of the likelihood of approval based on credit score, loan amount, and income.
 
+![](https://raw.githubusercontent.com/snandakumar87/loan-pre-qualification-dmn/master/Loan_prequalification_overview.png)
+
+
+
