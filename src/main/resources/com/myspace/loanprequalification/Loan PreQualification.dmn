@@ -211,7 +211,38 @@
     <dmn:informationRequirement id="_725CD78F-ED33-4AE3-A84D-4F46411F5703">
       <dmn:requiredDecision href="#_1431987D-1D84-494C-A918-D380D3F87AFE"/>
     </dmn:informationRequirement>
-    <dmn:literalExpression/>
+    <dmn:decisionTable id="_E99FC599-631E-416F-BABE-F839C6DA63AE" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_9E2CB4C4-D8F3-4E84-AE07-D42136266CA2">
+        <dmn:inputExpression id="_35E0B822-95B5-44E3-8BDE-8003CDA6F8FE" typeRef="tPercent">
+          <dmn:text>DTI pct</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output id="_DAEE7967-467F-40A8-81B5-BCC3A737F874" typeRef="tAffordabilityCategory"/>
+      <dmn:rule id="_B8F21494-7615-4EF8-AA85-CE22DF90CDDF">
+        <dmn:inputEntry id="_9EC5FF27-3EA2-443D-9D6A-81C14913375D">
+          <dmn:text>&lt;26</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_8B8A6CC0-77C9-4EC1-9DBA-948FF558FEF6">
+          <dmn:text>"Affordable"</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_E8156BFD-0FAD-40E7-8806-54E21A1BCB3E">
+        <dmn:inputEntry id="_F2800356-30D5-44CF-BBC1-5ABE1CB27C7F">
+          <dmn:text>[26..28]</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_2A1564CD-B4F2-4B8C-BFE4-25C43743FAE6">
+          <dmn:text>"Marginal"</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_73312474-7FAD-4E57-A373-118C092129EA">
+        <dmn:inputEntry id="_FD64947A-6766-4FF5-80AB-D9BA69720915">
+          <dmn:text>&gt;28</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_E9C46910-5E78-4E10-8E07-F9ABDCCFA9B4">
+          <dmn:text>"Unaffordable"</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+    </dmn:decisionTable>
   </dmn:decision>
   <dmn:inputData id="_C078963A-013E-421C-9B98-A85C111E019B" name="Monthly income">
     <dmn:extensionElements/>
@@ -221,6 +252,12 @@
     <dmndi:DMNDiagram>
       <di:extension>
         <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_E99FC599-631E-416F-BABE-F839C6DA63AE">
+            <kie:width>50.0</kie:width>
+            <kie:width>180.0</kie:width>
+            <kie:width>240.0</kie:width>
+            <kie:width>100.0</kie:width>
+          </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_AFD098F1-DB98-4CB0-B019-DF8A1AB792DE">
             <kie:width>50.0</kie:width>
             <kie:width>100.0</kie:width>
@@ -254,7 +291,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="437" y="207" width="175" height="112"/>
+        <dc:Bounds x="438" y="209" width="175" height="112"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_1431987D-1D84-494C-A918-D380D3F87AFE" dmnElementRef="_1431987D-1D84-494C-A918-D380D3F87AFE" isCollapsed="false">
@@ -349,7 +386,7 @@
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-_725CD78F-ED33-4AE3-A84D-4F46411F5703" dmnElementRef="_725CD78F-ED33-4AE3-A84D-4F46411F5703">
         <di:waypoint x="614" y="349.5"/>
-        <di:waypoint x="524.5" y="319"/>
+        <di:waypoint x="525.5" y="321"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_86D0111D-D217-405E-9FEE-68DA37C42769" dmnElementRef="_86D0111D-D217-405E-9FEE-68DA37C42769">
         <di:waypoint x="480.5" y="463.9473684210526"/>
@@ -368,7 +405,7 @@
         <di:waypoint x="344" y="152"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_6075D73A-1757-45C2-9763-EA46B98FDC10" dmnElementRef="_6075D73A-1757-45C2-9763-EA46B98FDC10">
-        <di:waypoint x="524.5" y="207"/>
+        <di:waypoint x="525.5" y="209"/>
         <di:waypoint x="344" y="152"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_AB6376E3-57F7-45F9-8FC0-C5411070F11C" dmnElementRef="_AB6376E3-57F7-45F9-8FC0-C5411070F11C">
