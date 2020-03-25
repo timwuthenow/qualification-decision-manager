@@ -57,4 +57,11 @@ DTI pct, Housing Expense, Loan Amount, Tax and Insurance Payment are all simple 
 ![](https://raw.githubusercontent.com/snandakumar87/loan-pre-qualification-dmn/master/DTI_pct.png)
 ![](https://raw.githubusercontent.com/snandakumar87/loan-pre-qualification-dmn/master/tax_information.png)
 
+Finally Loan payment calculates the monthly loan payment based on the Loan amount and the Loan rate pct. The formula is just arithmetic can be reused as an function.
+
+![](https://raw.githubusercontent.com/snandakumar87/loan-pre-qualification-dmn/master/loan_payment.png)
+
+
+
+
 
