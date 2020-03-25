@@ -259,14 +259,23 @@
       </factMappings>
       <dmnFilePath>src/main/resources/com/myspace/loanprequalification/Loan PreQualification.dmn</dmnFilePath>
       <type>DMN</type>
-      <dmnNamespace>https://kiegroup.org/dmn/_4D5ED131-974B-42A5-8997-9D416DD102E7</dmnNamespace>
-      <dmnName>Loan PreQualification</dmnName>
       <skipFromBuild>false</skipFromBuild>
       <stateless>false</stateless>
     </simulationDescriptor>
     <scenarios>
       <Scenario>
         <factMappingValues>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>#</name>
+              <className>java.lang.Integer</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Index</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+            <rawValue class="string">1</rawValue>
+          </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
               <name>Scenario description</name>
@@ -409,6 +418,10 @@
             </expressionIdentifier>
             <rawValue class="string">266.6666666666666666666666666666666</rawValue>
           </FactMappingValue>
+        </factMappingValues>
+      </Scenario>
+      <Scenario>
+        <factMappingValues>
           <FactMappingValue>
             <factIdentifier>
               <name>#</name>
@@ -418,7 +431,1405 @@
               <name>Index</name>
               <type>OTHER</type>
             </expressionIdentifier>
-            <rawValue class="string">1</rawValue>
+            <rawValue class="string">2</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Scenario description</name>
+              <className>java.lang.String</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Description</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Credit Score</name>
+              <className>Credit Score</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|1</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">600</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Down payment</name>
+              <className>Down payment</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|2</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">40000</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan rate pct</name>
+              <className>Loan rate pct</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|3</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">4</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Monthly income</name>
+              <className>Monthly income</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|4</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">5500</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Purchase price</name>
+              <className>Purchase price</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|5</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">200000</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Affordability category</name>
+              <className>Affordability category</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|6</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">&quot;Affordable&quot;</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>DTI pct</name>
+              <className>DTI pct</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|7</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">18.73692980748003371766365703983365</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Housing expense</name>
+              <className>Housing expense</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|8</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">1030.531139411401854471501137190851</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan PreQualification</name>
+              <className>Loan PreQualification</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|9</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">&quot;Likely disapproved&quot;</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan amount</name>
+              <className>Loan amount</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|10</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">160000</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan payment</name>
+              <className>Loan payment</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|11</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">763.8644727447351878048344705241841</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Tax and insurance information</name>
+              <className>Tax and insurance information</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|12</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">266.6666666666666666666666666666666</rawValue>
+          </FactMappingValue>
+        </factMappingValues>
+      </Scenario>
+      <Scenario>
+        <factMappingValues>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>#</name>
+              <className>java.lang.Integer</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Index</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+            <rawValue class="string">3</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Scenario description</name>
+              <className>java.lang.String</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Description</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Credit Score</name>
+              <className>Credit Score</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|1</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">675</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Down payment</name>
+              <className>Down payment</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|2</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">4000</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan rate pct</name>
+              <className>Loan rate pct</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|3</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">4</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Monthly income</name>
+              <className>Monthly income</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|4</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">5500</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Purchase price</name>
+              <className>Purchase price</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|5</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">20000</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Affordability category</name>
+              <className>Affordability category</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|6</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">&quot;Affordable&quot;</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>DTI pct</name>
+              <className>DTI pct</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|7</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">1.873692980748003371766365703983365</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Housing expense</name>
+              <className>Housing expense</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|8</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">103.0531139411401854471501137190851</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan PreQualification</name>
+              <className>Loan PreQualification</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|9</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">&quot;Possibly approved&quot;</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan amount</name>
+              <className>Loan amount</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|10</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">16000</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan payment</name>
+              <className>Loan payment</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|11</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">76.38644727447351878048344705241841</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Tax and insurance information</name>
+              <className>Tax and insurance information</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|12</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">266.6666666666666666666666666666666</rawValue>
+          </FactMappingValue>
+        </factMappingValues>
+      </Scenario>
+      <Scenario>
+        <factMappingValues>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>#</name>
+              <className>java.lang.Integer</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Index</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+            <rawValue class="string">4</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Scenario description</name>
+              <className>java.lang.String</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Description</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Credit Score</name>
+              <className>Credit Score</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|1</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">345</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Down payment</name>
+              <className>Down payment</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|2</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">40000</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan rate pct</name>
+              <className>Loan rate pct</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|3</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">4</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Monthly income</name>
+              <className>Monthly income</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|4</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">5500</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Purchase price</name>
+              <className>Purchase price</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|5</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">200000</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Affordability category</name>
+              <className>Affordability category</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|6</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">&quot;Affordable&quot;</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>DTI pct</name>
+              <className>DTI pct</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|7</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">18.73692980748003371766365703983365</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Housing expense</name>
+              <className>Housing expense</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|8</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">1030.531139411401854471501137190851</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan PreQualification</name>
+              <className>Loan PreQualification</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|9</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">&quot;Likely disapproved&quot;</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan amount</name>
+              <className>Loan amount</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|10</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">160000</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan payment</name>
+              <className>Loan payment</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|11</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">763.8644727447351878048344705241841</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Tax and insurance information</name>
+              <className>Tax and insurance information</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|12</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">266.6666666666666666666666666666666</rawValue>
+          </FactMappingValue>
+        </factMappingValues>
+      </Scenario>
+      <Scenario>
+        <factMappingValues>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>#</name>
+              <className>java.lang.Integer</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Index</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+            <rawValue class="string">5</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Scenario description</name>
+              <className>java.lang.String</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Description</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Credit Score</name>
+              <className>Credit Score</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|1</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">600</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Down payment</name>
+              <className>Down payment</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|2</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">40000</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan rate pct</name>
+              <className>Loan rate pct</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|3</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">4</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Monthly income</name>
+              <className>Monthly income</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|4</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">5500</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Purchase price</name>
+              <className>Purchase price</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|5</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">150000</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Affordability category</name>
+              <className>Affordability category</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|6</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">&quot;Affordable&quot;</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>DTI pct</name>
+              <className>DTI pct</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|7</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">13.18466954567282621119679451791594</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Housing expense</name>
+              <className>Housing expense</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|8</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">725.1568250120054416158236984853766</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan PreQualification</name>
+              <className>Loan PreQualification</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|9</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">&quot;Likely disapproved&quot;</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan amount</name>
+              <className>Loan amount</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|10</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">110000</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan payment</name>
+              <className>Loan payment</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|11</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">525.1568250120054416158236984853766</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Tax and insurance information</name>
+              <className>Tax and insurance information</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|12</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">266.6666666666666666666666666666666</rawValue>
+          </FactMappingValue>
+        </factMappingValues>
+      </Scenario>
+      <Scenario>
+        <factMappingValues>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>#</name>
+              <className>java.lang.Integer</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Index</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+            <rawValue class="string">6</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Scenario description</name>
+              <className>java.lang.String</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Description</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Credit Score</name>
+              <className>Credit Score</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|1</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">146</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Down payment</name>
+              <className>Down payment</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|2</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">34666</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan rate pct</name>
+              <className>Loan rate pct</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|3</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">4</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Monthly income</name>
+              <className>Monthly income</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|4</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">5500</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Purchase price</name>
+              <className>Purchase price</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|5</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">150000</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Affordability category</name>
+              <className>Affordability category</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|6</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">&quot;Affordable&quot;</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>DTI pct</name>
+              <className>DTI pct</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|7</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">13.64767557949332819889577032084503</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Housing expense</name>
+              <className>Housing expense</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|8</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">750.6221568721330509392673676464766</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan PreQualification</name>
+              <className>Loan PreQualification</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|9</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">&quot;Likely disapproved&quot;</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan amount</name>
+              <className>Loan amount</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|10</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">115334</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan payment</name>
+              <className>Loan payment</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|11</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">550.6221568721330509392673676464766</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Tax and insurance information</name>
+              <className>Tax and insurance information</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|12</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">266.6666666666666666666666666666666</rawValue>
+          </FactMappingValue>
+        </factMappingValues>
+      </Scenario>
+      <Scenario>
+        <factMappingValues>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>#</name>
+              <className>java.lang.Integer</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Index</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+            <rawValue class="string">7</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Scenario description</name>
+              <className>java.lang.String</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Description</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Credit Score</name>
+              <className>Credit Score</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|1</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">550</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Down payment</name>
+              <className>Down payment</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|2</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">40000</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan rate pct</name>
+              <className>Loan rate pct</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|3</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">4</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Monthly income</name>
+              <className>Monthly income</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|4</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">5500</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Purchase price</name>
+              <className>Purchase price</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|5</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">150000</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Affordability category</name>
+              <className>Affordability category</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|6</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">&quot;Affordable&quot;</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>DTI pct</name>
+              <className>DTI pct</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|7</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">13.18466954567282621119679451791594</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Housing expense</name>
+              <className>Housing expense</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|8</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">725.1568250120054416158236984853766</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan PreQualification</name>
+              <className>Loan PreQualification</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|9</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">&quot;Likely disapproved&quot;</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan amount</name>
+              <className>Loan amount</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|10</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">110000</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan payment</name>
+              <className>Loan payment</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|11</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">525.1568250120054416158236984853766</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Tax and insurance information</name>
+              <className>Tax and insurance information</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|12</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">266.6666666666666666666666666666666</rawValue>
+          </FactMappingValue>
+        </factMappingValues>
+      </Scenario>
+      <Scenario>
+        <factMappingValues>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>#</name>
+              <className>java.lang.Integer</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Index</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+            <rawValue class="string">8</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Scenario description</name>
+              <className>java.lang.String</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Description</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Credit Score</name>
+              <className>Credit Score</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|1</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">457</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Down payment</name>
+              <className>Down payment</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|2</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">34666</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan rate pct</name>
+              <className>Loan rate pct</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|3</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">3</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Monthly income</name>
+              <className>Monthly income</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|4</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">5500</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Purchase price</name>
+              <className>Purchase price</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|5</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">150000</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Affordability category</name>
+              <className>Affordability category</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|6</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">&quot;Affordable&quot;</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>DTI pct</name>
+              <className>DTI pct</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|7</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">12.47732356839135217248267499948560</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Housing expense</name>
+              <className>Housing expense</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|8</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">686.2527962615243694865471249717078</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan PreQualification</name>
+              <className>Loan PreQualification</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|9</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">&quot;Likely disapproved&quot;</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan amount</name>
+              <className>Loan amount</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|10</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">115334</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan payment</name>
+              <className>Loan payment</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|11</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">486.2527962615243694865471249717078</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Tax and insurance information</name>
+              <className>Tax and insurance information</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|12</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">266.6666666666666666666666666666666</rawValue>
+          </FactMappingValue>
+        </factMappingValues>
+      </Scenario>
+      <Scenario>
+        <factMappingValues>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>#</name>
+              <className>java.lang.Integer</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Index</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+            <rawValue class="string">9</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Scenario description</name>
+              <className>java.lang.String</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Description</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Credit Score</name>
+              <className>Credit Score</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|1</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">600</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Down payment</name>
+              <className>Down payment</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|2</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">40000</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan rate pct</name>
+              <className>Loan rate pct</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|3</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">2</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Monthly income</name>
+              <className>Monthly income</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|4</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">5500</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Purchase price</name>
+              <className>Purchase price</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|5</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">150000</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Affordability category</name>
+              <className>Affordability category</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|6</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">&quot;Affordable&quot;</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>DTI pct</name>
+              <className>DTI pct</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|7</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">11.02875309014004796064311098447537</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Housing expense</name>
+              <className>Housing expense</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|8</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">606.5814199577026378353711041461454</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan PreQualification</name>
+              <className>Loan PreQualification</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|9</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">&quot;Likely disapproved&quot;</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan amount</name>
+              <className>Loan amount</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|10</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">110000</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan payment</name>
+              <className>Loan payment</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|11</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">406.5814199577026378353711041461454</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Tax and insurance information</name>
+              <className>Tax and insurance information</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|12</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">266.6666666666666666666666666666666</rawValue>
+          </FactMappingValue>
+        </factMappingValues>
+      </Scenario>
+      <Scenario>
+        <factMappingValues>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>#</name>
+              <className>java.lang.Integer</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Index</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+            <rawValue class="string">10</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Scenario description</name>
+              <className>java.lang.String</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Description</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Credit Score</name>
+              <className>Credit Score</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|1</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">600</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Down payment</name>
+              <className>Down payment</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|2</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">40000</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan rate pct</name>
+              <className>Loan rate pct</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|3</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">6</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Monthly income</name>
+              <className>Monthly income</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|4</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">5500</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Purchase price</name>
+              <className>Purchase price</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|5</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">150000</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Affordability category</name>
+              <className>Affordability category</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|6</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">&quot;Affordable&quot;</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>DTI pct</name>
+              <className>DTI pct</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|7</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">15.62737413941868425546558851005315</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Housing expense</name>
+              <className>Housing expense</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|8</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">859.5055776680276340506073680529235</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan PreQualification</name>
+              <className>Loan PreQualification</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|9</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">&quot;Likely disapproved&quot;</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan amount</name>
+              <className>Loan amount</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|10</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">110000</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Loan payment</name>
+              <className>Loan payment</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|11</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">659.5055776680276340506073680529235</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Tax and insurance information</name>
+              <className>Tax and insurance information</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|12</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">266.6666666666666666666666666666666</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
