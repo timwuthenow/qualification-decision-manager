@@ -35,6 +35,12 @@ Affordability category classifies values of the debt-to-income ration as "Afford
 
 Affordability category depends on a supporting decision DTI pct, which in turn depends on supporting decision Housing expense, and input data Monthly income. Housing expense depends on supporting decisions Tax and insurance payment and Loan payment. Loan payment in turn depends on supporting decision Loan amount and input data Loan rate pct, where Loan amount depends on the input data Purchase price and Down payment.
 
+DRD Elements
+=============
+
+Credit score below 620 is poor, 620-680 is fair, 680-720 is good, and over 720 is excelent. The loan is likely approved if the credit score is excellent and affordability is either affordable or marginal, and also likely approved if the credit score is good and the loan is affordable. It is possibly approved if credit score is good and affordability marginal, or credit score is fair and affordable. And it is likely disapproved if the credit score is fair and affordability marginal, or either credit score is poor or affordability is unaffordable.
+
+![](https://raw.githubusercontent.com/snandakumar87/loan-pre-qualification-dmn/master/loan_prequal.png)
 
 
 
