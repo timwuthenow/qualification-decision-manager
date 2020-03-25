@@ -730,7 +730,7 @@
               <name>1|12</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">266.6666666666666666666666666666666</rawValue>
+            <rawValue class="string">26.66666666666666666666666666666666</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
@@ -1044,7 +1044,7 @@
               <name>1|12</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">266.6666666666666666666666666666666</rawValue>
+            <rawValue class="string">200.0000</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
@@ -1201,7 +1201,7 @@
               <name>1|12</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">266.6666666666666666666666666666666</rawValue>
+            <rawValue class="string">200.0000</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
@@ -1358,7 +1358,7 @@
               <name>1|12</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">266.6666666666666666666666666666666</rawValue>
+            <rawValue class="string">200.0000</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
@@ -1515,7 +1515,7 @@
               <name>1|12</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">266.6666666666666666666666666666666</rawValue>
+            <rawValue class="string">200.0000</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
@@ -1672,7 +1672,7 @@
               <name>1|12</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">266.6666666666666666666666666666666</rawValue>
+            <rawValue class="string">200.0000</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
@@ -1829,7 +1829,7 @@
               <name>1|12</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">266.6666666666666666666666666666666</rawValue>
+            <rawValue class="string">200.0000</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
