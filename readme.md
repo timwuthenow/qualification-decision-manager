@@ -42,6 +42,12 @@ Credit score below 620 is poor, 620-680 is fair, 680-720 is good, and over 720 i
 
 ![](https://raw.githubusercontent.com/snandakumar87/loan-pre-qualification-dmn/master/loan_prequal.png)
 
+Affordability category merely classifies DTI pct, a number expressed as percent, into the possible values "Affordable", "Marginal" and "Unaffordable". The rules are these:
 
+"Affordable" if DTI pct is less than 26
+"Marginal" if DTI pct is between 26 and 28, including the endpoints.
+"Unaffordable" if DTI pct is greater than 28.
+
+![](https://raw.githubusercontent.com/snandakumar87/loan-pre-qualification-dmn/master/affordavility_category.png)
 
 
