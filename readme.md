@@ -68,6 +68,7 @@ Testing the DMN
 
 Red Hat Process Automation Manager provides for When-Then style scenario testing tool which simplifies the testing of DMN modes. An example test suite can be seen as below:
 
+![](https://raw.githubusercontent.com/snandakumar87/loan-pre-qualification-dmn/master/scenario.png)
 
 
 
