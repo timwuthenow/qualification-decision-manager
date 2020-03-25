@@ -28,5 +28,14 @@ Loan Rate pct   |
 Down Payment    |
 Purchase Price  |
 
+Decision Flow
+==============
+
+Affordability category classifies values of the debt-to-income ration as "Affordable", "Marginal" or "Unaffordable". This ratio is defined as the housing expense divided by the borrower's monthly income, where housing epense is the monthly loan payment plus the estimated monthly tax and insurance payments.
+
+Affordability category depends on a supporting decision DTI pct, which in turn depends on supporting decision Housing expense, and input data Monthly income. Housing expense depends on supporting decisions Tax and insurance payment and Loan payment. Loan payment in turn depends on supporting decision Loan amount and input data Loan rate pct, where Loan amount depends on the input data Purchase price and Down payment.
+
+
+
 
 
