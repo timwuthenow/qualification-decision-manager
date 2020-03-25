@@ -5,3 +5,4 @@ A sample implementation of Loan Pre-Qualification using DMN. Decision Request Di
 
 The basic DRD element types are: 
 
+![](https://raw.githubusercontent.com/snandakumar87/loan-pre-qualification-dmn/master/DMN_overview.png)
