@@ -140,6 +140,50 @@
           <dmn:text>"Possibly approved"</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
+      <dmn:rule id="_B8D9916B-DB48-4775-8C57-0E5D5805BCE7">
+        <dmn:inputEntry id="_8A76E5A8-DEBB-4010-8E7A-A7EE6AE5E5C9">
+          <dmn:text>(620..680]</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_CBBCAAFE-DC0E-4579-B8D0-59F4881E7FC7">
+          <dmn:text>"Affordable"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_033D69D5-CD09-4B23-BC0F-8329259792C1">
+          <dmn:text>"Possibly approved"</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_2DFD12E7-7A3F-4566-B0B6-38406AC1715C">
+        <dmn:inputEntry id="_4FB7A25C-3718-4FD3-8C4B-28596B4D67C3">
+          <dmn:text>(620..680]</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_56EA5E04-2A97-40BD-B538-D65205A8CD06">
+          <dmn:text>"Marginal"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_3C7D0A76-E3C8-43B9-9BA1-5FE35CC08FFD">
+          <dmn:text>"Likely disapproved"</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_519327FF-490F-4854-BA69-D4B795172BEE">
+        <dmn:inputEntry id="_AF6C02F7-F9F1-4465-97FD-6FA457D17643">
+          <dmn:text>&lt;620</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_97CFADC0-3CD2-4337-9CE9-FC556A92E54C">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_B7B76B7C-19C3-4090-BA23-A5E9579AD42C">
+          <dmn:text>"Likely disapproved"</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_370EE995-22B5-4393-83C1-8857EB1D08EA">
+        <dmn:inputEntry id="_E731BB70-5980-4195-85F3-E9DAB18C449B">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_0FE63F8A-13D9-4091-83ED-058450E4D75E">
+          <dmn:text>"Unaffordable"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_A4F8552B-796E-4C3E-98F8-D0272CD1D24E">
+          <dmn:text>"Likely disapproved"</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
     </dmn:decisionTable>
   </dmn:decision>
   <dmn:decision id="_10749B32-AF8B-494E-A9DD-322DA60BF013" name="Loan amount">
