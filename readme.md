@@ -50,4 +50,11 @@ Affordability category merely classifies DTI pct, a number expressed as percent,
 
 ![](https://raw.githubusercontent.com/snandakumar87/loan-pre-qualification-dmn/master/affordavility_category.png)
 
+DTI pct, Housing Expense, Loan Amount, Tax and Insurance Payment are all simple formula expressed in the FEEL expression.
+
+![](https://github.com/snandakumar87/loan-pre-qualification-dmn/blob/master/housing_expense.png)
+![](https://raw.githubusercontent.com/snandakumar87/loan-pre-qualification-dmn/master/loan_amount.png)
+![](https://raw.githubusercontent.com/snandakumar87/loan-pre-qualification-dmn/master/DTI_pct.png)
+![](https://raw.githubusercontent.com/snandakumar87/loan-pre-qualification-dmn/master/tax_information.png)
+
 
