@@ -17,5 +17,16 @@ The DMN shows a mortgage loan pre-qualification decision that might appear on th
 
 ![](https://raw.githubusercontent.com/snandakumar87/loan-pre-qualification-dmn/master/Loan_prequalification_overview.png)
 
+DRD Input Elements
+==================
+
+Elements        | 
+-------------   | 
+Credit Score    | 
+Monthly Income  |
+Loan Rate pct   |
+Down Payment    |
+Purchase Price  |
+
 
 
