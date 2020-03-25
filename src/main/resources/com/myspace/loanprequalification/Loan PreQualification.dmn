@@ -53,7 +53,9 @@
     <dmn:informationRequirement id="_648728BE-BA8E-4D9F-BF47-796D8064E77F">
       <dmn:requiredDecision href="#_101EB48B-1D60-4FB8-B085-E2F5EF91B298"/>
     </dmn:informationRequirement>
-    <dmn:literalExpression/>
+    <dmn:literalExpression id="_A2802168-FB4E-438B-BA6D-6F10E40ACBEE">
+      <dmn:text>Loan payment + Tax and insurance information</dmn:text>
+    </dmn:literalExpression>
   </dmn:decision>
   <dmn:inputData id="_6B3D408A-118B-406A-85DC-CDD5DC6D39D6" name="Credit Score">
     <dmn:extensionElements/>
@@ -269,6 +271,9 @@
             <kie:width>100.0</kie:width>
             <kie:width>100.0</kie:width>
             <kie:width>100.0</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_A2802168-FB4E-438B-BA6D-6F10E40ACBEE">
+            <kie:width>130.0</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
