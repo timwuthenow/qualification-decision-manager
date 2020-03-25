@@ -13,6 +13,8 @@ A Business Knowledge Model represents a self-contained bit of decision logic. It
 A knowledge source (rectangle with wavy bottom) represents the authority for some bit of decision logic. It could be a document, an external model or a person. Knowledge sources have no execution semantics. They simply document the source of the information used in the decision logic.
 A text annotation adds an additional bit of documentation to any of the parts of the decision logic, they have no execution semantics.
 
+![](https://raw.githubusercontent.com/snandakumar87/loan-pre-qualification-dmn/master/pre_qual_calc.png)
+
 The DMN shows a mortgage loan pre-qualification decision that might appear on the lender's website to give prospective borrowers an idea of the likelihood of approval based on credit score, loan amount, and income.
 
 ![](https://raw.githubusercontent.com/snandakumar87/loan-pre-qualification-dmn/master/Loan_prequalification_overview.png)
@@ -60,6 +62,11 @@ DTI pct, Housing Expense, Loan Amount, Tax and Insurance Payment are all simple 
 Finally Loan payment calculates the monthly loan payment based on the Loan amount and the Loan rate pct. The formula is just arithmetic can be reused as an function.
 
 ![](https://raw.githubusercontent.com/snandakumar87/loan-pre-qualification-dmn/master/loan_payment.png)
+
+Testing the DMN
+===============
+
+Red Hat Process Automation Manager provides for When-Then style scenario testing tool which simplifies the testing of DMN modes. An example test suite can be seen as below:
 
 
 
