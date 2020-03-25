@@ -42,7 +42,9 @@
     <dmn:informationRequirement id="_D826A489-82B0-4328-913D-5EEF957E1700">
       <dmn:requiredInput href="#_9CF7FEA4-6BDF-4D96-91A6-3317E2683BA6"/>
     </dmn:informationRequirement>
-    <dmn:literalExpression/>
+    <dmn:literalExpression id="_A79B5DED-368E-456B-AFBE-F003778AD1A7">
+      <dmn:text>0.0125*Purchase price/12+3.50*(Purchase price/1000)/12</dmn:text>
+    </dmn:literalExpression>
   </dmn:decision>
   <dmn:decision id="_2E048B7D-5C57-4AAA-A230-807A93FCD6FE" name="Housing expense">
     <dmn:extensionElements/>
@@ -266,6 +268,9 @@
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_E7E1A4D9-0676-421E-8917-B709443E147E">
             <kie:width>130.0</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_A79B5DED-368E-456B-AFBE-F003778AD1A7">
+            <kie:width>627.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_AFD098F1-DB98-4CB0-B019-DF8A1AB792DE">
             <kie:width>50.0</kie:width>
