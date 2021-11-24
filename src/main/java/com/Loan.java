@@ -8,28 +8,17 @@ public class Loan implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.Double loanAmount;
-	private java.lang.Double loanPct;
-
 	private java.lang.Boolean loanAgeApproval;
 
+	private java.lang.Double amount;
+
+	private java.lang.Integer duration;
+
+	private java.lang.Double monthlyRepayment;
+
+	private java.lang.Double interestRate;
+
 	public Loan() {
-	}
-
-	public java.lang.Double getLoanAmount() {
-		return this.loanAmount;
-	}
-
-	public void setLoanAmount(java.lang.Double loanAmount) {
-		this.loanAmount = loanAmount;
-	}
-
-	public java.lang.Double getLoanPct() {
-		return this.loanPct;
-	}
-
-	public void setLoanPct(java.lang.Double loanPct) {
-		this.loanPct = loanPct;
 	}
 
 	public java.lang.Boolean getLoanAgeApproval() {
@@ -40,11 +29,46 @@ public class Loan implements java.io.Serializable {
 		this.loanAgeApproval = loanAgeApproval;
 	}
 
-	public Loan(java.lang.Double loanAmount, java.lang.Double loanPct,
-			java.lang.Boolean loanAgeApproval) {
-		this.loanAmount = loanAmount;
-		this.loanPct = loanPct;
+	public java.lang.Double getAmount() {
+		return this.amount;
+	}
+
+	public void setAmount(java.lang.Double amount) {
+		this.amount = amount;
+	}
+
+	public java.lang.Integer getDuration() {
+		return this.duration;
+	}
+
+	public void setDuration(java.lang.Integer duration) {
+		this.duration = duration;
+	}
+
+	public java.lang.Double getMonthlyRepayment() {
+		return this.monthlyRepayment;
+	}
+
+	public void setMonthlyRepayment(java.lang.Double monthlyRepayment) {
+		this.monthlyRepayment = monthlyRepayment;
+	}
+
+	public java.lang.Double getInterestRate() {
+		return this.interestRate;
+	}
+
+	public void setInterestRate(java.lang.Double interestRate) {
+		this.interestRate = interestRate;
+	}
+
+	public Loan(java.lang.Boolean loanAgeApproval, java.lang.Double amount,
+			java.lang.Integer duration, java.lang.Double monthlyRepayment,
+			java.lang.Double interestRate) {
 		this.loanAgeApproval = loanAgeApproval;
+		this.amount = amount;
+		this.duration = duration;
+		this.monthlyRepayment = monthlyRepayment;
+		this.interestRate = interestRate;
 	}
 
 }
