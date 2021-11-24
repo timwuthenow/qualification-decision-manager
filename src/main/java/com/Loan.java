@@ -18,6 +18,12 @@ public class Loan implements java.io.Serializable {
 
 	private Double interestRate;
 
+	private java.lang.Integer purchasePrice;
+
+	private java.lang.Integer downPayment;
+
+	private java.lang.Integer monthyIncome;
+
 	public Loan() {
 	}
 
@@ -61,14 +67,42 @@ public class Loan implements java.io.Serializable {
 		this.interestRate = interestRate;
 	}
 
+	public java.lang.Integer getPurchasePrice() {
+		return this.purchasePrice;
+	}
+
+	public void setPurchasePrice(java.lang.Integer purchasePrice) {
+		this.purchasePrice = purchasePrice;
+	}
+
+	public java.lang.Integer getDownPayment() {
+		return this.downPayment;
+	}
+
+	public void setDownPayment(java.lang.Integer downPayment) {
+		this.downPayment = downPayment;
+	}
+
+	public java.lang.Integer getMonthyIncome() {
+		return this.monthyIncome;
+	}
+
+	public void setMonthyIncome(java.lang.Integer monthyIncome) {
+		this.monthyIncome = monthyIncome;
+	}
+
 	public Loan(java.lang.Boolean loanAgeApproval, java.lang.Double amount,
 			java.lang.Integer duration, java.lang.Double monthlyRepayment,
-			java.lang.Double interestRate) {
+			java.lang.Double interestRate, java.lang.Integer purchasePrice,
+			java.lang.Integer downPayment, java.lang.Integer monthyIncome) {
 		this.loanAgeApproval = loanAgeApproval;
 		this.amount = amount;
 		this.duration = duration;
 		this.monthlyRepayment = monthlyRepayment;
 		this.interestRate = interestRate;
+		this.purchasePrice = purchasePrice;
+		this.downPayment = downPayment;
+		this.monthyIncome = monthyIncome;
 	}
 
 }
