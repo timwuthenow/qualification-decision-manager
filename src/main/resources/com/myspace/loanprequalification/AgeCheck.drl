@@ -2,7 +2,7 @@ package com.myspace.loanprequalification;
 
 import com.myspace.loanprequalification.Customer;
 
-import com.myspace.loanprequalification.Loan;
+import com.Loan;
 
 rule "Age Check"
    when
