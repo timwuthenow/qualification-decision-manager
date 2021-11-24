@@ -6,12 +6,33 @@ package com;
 
 public class Loan implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Loan() {
-    }
+	private java.lang.Double loanAmount;
+	private java.lang.Double loanPct;
 
+	public Loan() {
+	}
 
+	public java.lang.Double getLoanAmount() {
+		return this.loanAmount;
+	}
 
+	public void setLoanAmount(java.lang.Double loanAmount) {
+		this.loanAmount = loanAmount;
+	}
+
+	public java.lang.Double getLoanPct() {
+		return this.loanPct;
+	}
+
+	public void setLoanPct(java.lang.Double loanPct) {
+		this.loanPct = loanPct;
+	}
+
+	public Loan(java.lang.Double loanAmount, java.lang.Double loanPct) {
+		this.loanAmount = loanAmount;
+		this.loanPct = loanPct;
+	}
 
 }
