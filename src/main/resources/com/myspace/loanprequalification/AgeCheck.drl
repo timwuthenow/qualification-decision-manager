@@ -1,10 +1,13 @@
 package com.myspace.loanprequalification;
 
+
+
 import com.myspace.loanprequalification.Customer;
 
 import com.Loan;
 
 rule "Age Check"
+   ruleflow-group "age-check"
    when
       customer : Customer (age> 18, age < 70)
       loan:Loan()
