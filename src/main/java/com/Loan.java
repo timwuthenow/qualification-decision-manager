@@ -11,6 +11,8 @@ public class Loan implements java.io.Serializable {
 	private java.lang.Double loanAmount;
 	private java.lang.Double loanPct;
 
+	private java.lang.Boolean loanAgeApproval;
+
 	public Loan() {
 	}
 
@@ -30,9 +32,19 @@ public class Loan implements java.io.Serializable {
 		this.loanPct = loanPct;
 	}
 
-	public Loan(java.lang.Double loanAmount, java.lang.Double loanPct) {
+	public java.lang.Boolean getLoanAgeApproval() {
+		return this.loanAgeApproval;
+	}
+
+	public void setLoanAgeApproval(java.lang.Boolean loanAgeApproval) {
+		this.loanAgeApproval = loanAgeApproval;
+	}
+
+	public Loan(java.lang.Double loanAmount, java.lang.Double loanPct,
+			java.lang.Boolean loanAgeApproval) {
 		this.loanAmount = loanAmount;
 		this.loanPct = loanPct;
+		this.loanAgeApproval = loanAgeApproval;
 	}
 
 }
