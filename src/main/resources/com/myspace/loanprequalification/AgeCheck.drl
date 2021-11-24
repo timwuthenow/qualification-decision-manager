@@ -1,2 +1,13 @@
 package com.myspace.loanprequalification;
 
+import com.myspace.loanprequalification.Customer;
+
+import com.myspace.loanprequalification.Loan;
+
+rule "Age Check"
+   when
+      customer : Customer (age> 18, age < 70)
+      loan:Loan()
+   then
+      loan.setLoanAgeApproval(true);
+end
