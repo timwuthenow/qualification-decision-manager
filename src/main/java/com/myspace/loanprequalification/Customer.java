@@ -6,12 +6,33 @@ package com.myspace.loanprequalification;
 
 public class Customer implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Customer() {
-    }
+	private java.lang.Integer custId;
+	private java.lang.Double age;
 
+	public Customer() {
+	}
 
+	public java.lang.Integer getCustId() {
+		return this.custId;
+	}
 
+	public void setCustId(java.lang.Integer custId) {
+		this.custId = custId;
+	}
+
+	public java.lang.Double getAge() {
+		return this.age;
+	}
+
+	public void setAge(java.lang.Double age) {
+		this.age = age;
+	}
+
+	public Customer(java.lang.Integer custId, java.lang.Double age) {
+		this.custId = custId;
+		this.age = age;
+	}
 
 }
