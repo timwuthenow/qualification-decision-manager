@@ -16,7 +16,7 @@ public class Loan implements java.io.Serializable {
 
 	private java.lang.Double monthlyRepayment;
 
-	private Integer interestRate;
+	private Float interestRate;
 
 	public Loan() {
 	}
@@ -53,17 +53,17 @@ public class Loan implements java.io.Serializable {
 		this.monthlyRepayment = monthlyRepayment;
 	}
 
-	public java.lang.Integer getInterestRate() {
+	public java.lang.Float getInterestRate() {
 		return this.interestRate;
 	}
 
-	public void setInterestRate(java.lang.Integer interestRate) {
+	public void setInterestRate(java.lang.Float interestRate) {
 		this.interestRate = interestRate;
 	}
 
 	public Loan(java.lang.Boolean loanAgeApproval, java.lang.Double amount,
 			java.lang.Integer duration, java.lang.Double monthlyRepayment,
-			java.lang.Integer interestRate) {
+			java.lang.Float interestRate) {
 		this.loanAgeApproval = loanAgeApproval;
 		this.amount = amount;
 		this.duration = duration;
