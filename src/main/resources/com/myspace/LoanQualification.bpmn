@@ -106,7 +106,8 @@
         </drools:metaData>
       </bpmn2:extensionElements>
     </bpmn2:sequenceFlow>
-    <bpmn2:businessRuleTask id="_45FCF473-940C-473B-AE4D-2A19595D890B" drools:ruleFlowGroup="final-auth" name="Final Auth" implementation="http://www.jboss.org/drools/rule">
+    <bpmn2:businessRuleTask id="_45FCF473-940C-473B-AE4D-2A19595D890B" drools:ruleFlowGroup="
+                                                                                             -auth" name="Final Authorization" implementation="http://www.jboss.org/drools/rule">
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
           <drools:metaValue><![CDATA[Final Auth]]></drools:metaValue>
